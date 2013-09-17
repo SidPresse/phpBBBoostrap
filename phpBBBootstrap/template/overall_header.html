@@ -54,10 +54,9 @@
 			<a class="brand" href="/index.php" target="_blank"><i class="icon-custom-internet-home"></i> {SITENAME}</a>
 	 
 			<!-- Everything you want hidden at 940px or less, place within here -->
-			<div class="nav-collapse collapse pull-right">
+			<div class="nav-collapse collapse">
 				<!-- .nav, .navbar-search, .navbar-form, etc -->
-				
-				<ul class="nav">
+				<ul class="nav pull-right">
       				<!-- IF not S_IS_BOT and S_USER_LOGGED_IN -->
       					<li><a href="{U_PROFILE}" title="{L_PROFILE}" accesskey="e"><i class="icon-user"></i> {L_PROFILE}</a></li>
       					<!-- IF S_DISPLAY_PM --><li><a href="{U_PRIVATEMSGS}"><i class="icon-envelope"></i> {PRIVATE_MESSAGE_INFO}</a></li><!-- ENDIF -->
@@ -70,7 +69,6 @@
 						<li><a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x"><!-- IF S_USER_LOGGED_IN --><i class="icon-signout"></i> {L_LOGOUT} <!-- ELSE --><i class="icon-signin"></i> {L_LOGIN} <!-- ENDIF --></a></li>
 					<!-- ENDIF -->
     			</ul>
-				
 			</div>
 		</div>
 	</div>
