@@ -78,7 +78,20 @@
 <header id="dm_header" class="header-{SCRIPT_NAME}">
 	<div  id="dm_header_inner" class="container">
 		<div class="row-fluid">
-			<div class="span7">
+
+			<div class="logoFull span8">
+				<!-- IF SCRIPT_NAME eq index -->
+					<span class="link">
+						<img src="/uploads/assets/logofull.png" alt="">
+					</span>
+				<!-- ELSE -->
+					<a href="{U_INDEX}" title="{L_INDEX}" class="link">
+						<img src="/uploads/assets/logofull.png" alt="">
+					</a>
+				<!-- ENDIF -->
+			</div>
+
+			<div class="span7 hidden">
 				<!-- @todo <a href="{U_INDEX}" title="{L_INDEX}" id="logo">{SITE_LOGO_IMG}</a>  -->
 				<!-- IF SCRIPT_NAME eq index -->
 					<h1>{SITENAME}</h1>			
@@ -88,7 +101,8 @@
 				<!-- ENDIF -->
 				<p class="hidden"><a href="#start_here">{L_SKIP}</a></p>
 			</div>
-			<div class="span5 text-right">
+			
+			<div class="span4 text-right">
 				<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
 				<form class="form-search form-inline hidden-phone" action="{U_SEARCH}" method="get" >
 					{S_SEARCH_HIDDEN_FIELDS}
