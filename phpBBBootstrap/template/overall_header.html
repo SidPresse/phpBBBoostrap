@@ -77,36 +77,35 @@
 </nav>
 <header id="dm_header" class="header-{SCRIPT_NAME}">
 	<div  id="dm_header_inner" class="container">
-		<div class="row-fluid">
-
-			<div class="logoFull span8">
-				<!-- IF SCRIPT_NAME eq index -->
-					<span class="link">
-						<img src="/uploads/assets/logofull.png" alt="">
-					</span>
-				<!-- ELSE -->
-					<a href="{U_INDEX}" title="{L_INDEX}" class="link">
-						<img src="/uploads/assets/logofull.png" alt="">
-					</a>
-				<!-- ENDIF -->
+		<div class="row">
+			<div class="span12">
+				<div class="logoFull hidden-print">
+					<!-- IF SCRIPT_NAME eq index -->
+						<span class="link">
+							<img src="/uploads/assets/logofull.png" alt="" />
+						</span>
+					<!-- ELSE -->
+						<a href="{U_INDEX}" title="{L_INDEX}" class="link">
+							<img src="/uploads/assets/logofull.png" alt="" />
+						</a>
+					<!-- ENDIF -->
+				</div>
+				
+				<div class="logoLight pull-left visible-print">
+					<img src="/uploads/assets/logolight.png" alt="" />
+				</div>
+				<div class="printInfo pull-left visible-print">
+					<h1 class="dm_site_title">{SITENAME}</h1>
+					<p class="dm_site_slogan">{SITE_DESCRIPTION}</p>
+				</div>
 			</div>
-
-			<div class="span7 hidden">
-				<!-- @todo <a href="{U_INDEX}" title="{L_INDEX}" id="logo">{SITE_LOGO_IMG}</a>  -->
-				<!-- IF SCRIPT_NAME eq index -->
-					<h1>{SITENAME}</h1>			
-					<p>{SITE_DESCRIPTION}</p>
-				<!-- ELSE -->
-					<h1>{SITENAME}<br/><small>{SITE_DESCRIPTION}</small></h1>
-				<!-- ENDIF -->
-				<p class="hidden"><a href="#start_here">{L_SKIP}</a></p>
-			</div>
-
 		</div>
 	</div>
 </header>
 
 <nav class="container">
+
+	<a href="#start_here">{L_SKIP}</a>
 	
 	<div class="row">
 
