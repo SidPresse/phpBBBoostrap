@@ -143,12 +143,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
-			<div class="alert ">
-				<button type="button" class="close" data-dismiss="alert">&times;</button>
-				<strong>{L_INFORMATION} :</strong> <small>{L_BOARD_DISABLED}</small>
-			</div>
-		<!-- ENDIF -->
 	</div>
 </header>
 
@@ -159,6 +153,13 @@
 		<li><span class="divider">&rsaquo;</span><a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a></li>
 		<!-- END navlinks -->		
 	</ul>
+
+	<!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
+		<div class="alert">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>{L_INFORMATION} :</strong> <small>{L_BOARD_DISABLED}</small>
+		</div>
+	<!-- ENDIF -->
 </nav>
 
 <section class="section-{SCRIPT_NAME} container" id="start_here">
