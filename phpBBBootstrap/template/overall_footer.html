@@ -37,8 +37,8 @@
 
 <footer id="bottom" >
 	<div class="container">
-		<div class="row-fluid">
-			<div class="span4">	
+		<div class="row">
+			<div class="span3">	
 				<ul class="unstyled muted">
 					<!-- IF U_TEAM --><li class="rightside"><a href="{U_TEAM}"><small><i class="icon-group"></i> {L_THE_TEAM}</small></a></li><!-- ENDIF -->
 					<!-- IF not S_IS_BOT --><li class="rightside"><a href="{U_DELETE_COOKIES}"><small><i class="icon-trash"></i> {L_DELETE_COOKIES}</small></a></li><!-- ENDIF -->
@@ -46,21 +46,22 @@
 				</ul>
 			</div>
 
-			<div class="span4">	
+			<div class="span6 text-center">	
 				<!-- IF S_USER_LOGGED_IN or U_ACP or U_MCP  -->
-				<p class="btn-group text-center">
+				<p class="btn-group">
 					<!-- IF S_USER_LOGGED_IN --><a href="{U_PROFILE}" class="btn btn-mini ">{L_PROFILE}</a><!-- ENDIF -->
 					<!-- IF U_MCP --><a href="{U_MCP}" class="btn btn-mini btn-warning">{L_MCP}</a><!-- ENDIF -->
 					<!-- IF U_ACP --><a href="{U_ACP}" class="btn btn-mini btn-danger">{L_ACP}</a><!-- ENDIF -->
 				</p>
-				<p class="text-center">
+				<br />
+				<p class="btn-group">
 					<span class="tooltip-top btn btn-mini" title="HTML5"><i class="icon-html5"></i></span> 
 					<span class="tooltip-top btn btn-mini" title="CSS3"><i class="icon-css3"></i></span> 
 				</p>
 				<!-- ENDIF -->
 			</div>
 		
-			<div class="span4">
+			<div class="span3">
 				<ul class="unstyled muted text-right">
 					<li><small>{CREDIT_LINE}</small></li>
 					<!-- IF TRANSLATION_INFO --><li><small>{TRANSLATION_INFO}</small></li><!-- ENDIF -->
@@ -71,6 +72,7 @@
 		</div>
 	</div>
 </footer>
+
 <section>
 	<div id="popupMP" class="modal hide fade" tabindex="-1">
   		<div class="modal-header">
