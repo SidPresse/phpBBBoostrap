@@ -7,8 +7,5 @@
     --------------------------------------------------------------
 */
 
-@import url("bootstrap.min.css");
-@import url("bootstrap-fileupload.min.css");
-@import url("font-awesome.min.css");
-@import url("forums.css");
-
+/* Récupération style du forum généré par le site du client */
+@import url("../../../../../../htdocs/theme/css/forum.css");
