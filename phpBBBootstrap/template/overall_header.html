@@ -57,7 +57,11 @@
 			</a>
 			 
 			<!-- Be sure to leave the brand out there if you want it shown -->
-			<a class="brand" href="/index.php" target="_blank"><i class="icon-custom-internet-home icon-large"></i> {SITENAME}</a>
+			<!-- IF SCRIPT_NAME eq index -->
+				<span class="brand active"><i class="icon-custom-internet-home icon-large"></i> {SITENAME}</a></span>
+			<!-- ELSE -->
+				<a class="brand" href="{U_INDEX}" title="{L_INDEX}"><i class="icon-custom-internet-home icon-large"></i> {SITENAME}</a>
+			<!-- ENDIF -->
 	 
 			<!-- Everything you want hidden at 940px or less, place within here -->
 			<div class="nav-collapse collapse">
@@ -84,15 +88,9 @@
 		<div class="row">
 			<div class="span12">
 				<div class="logoFull hidden-print">
-					<!-- IF SCRIPT_NAME eq index -->
-						<span class="link">
-							<img src="/uploads/assets/logofull.png" alt="" />
-						</span>
-					<!-- ELSE -->
-						<a href="{U_INDEX}" title="{L_INDEX}" class="link">
-							<img src="/uploads/assets/logofull.png" alt="" />
-						</a>
-					<!-- ENDIF -->
+					<a href="/index.php" target="_blank" class="link">
+						<img src="/uploads/assets/logofull.png" alt="" />
+					</a>
 				</div>
 				<div class="logoLight pull-left visible-print">
 					<img src="/uploads/assets/logolight.png" alt="" />
