@@ -57,7 +57,7 @@
 			</a>
 			 
 			<!-- Be sure to leave the brand out there if you want it shown -->
-			<a class="brand" href="/index.php" target="_blank"><i class="icon-custom-internet-home icon-large"></i> {SITENAME}</a>
+			<a class="brand<!-- IF SCRIPT_NAME eq 'index' --> active<!-- ENDIF -->" href="{U_INDEX}"><i class="icon-custom-internet-home icon-large"></i> {SITENAME}</a>
 	 
 			<!-- Everything you want hidden at 940px or less, place within here -->
 			<div class="nav-collapse collapse">
@@ -93,6 +93,7 @@
 							<img src="/uploads/assets/logofull.png" alt="" />
 						</a>
 					<!-- ENDIF -->
+					<!-- /index.php -->
 				</div>
 				<div class="logoLight pull-left visible-print">
 					<img src="/uploads/assets/logolight.png" alt="" />
