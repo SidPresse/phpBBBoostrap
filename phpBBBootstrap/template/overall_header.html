@@ -57,7 +57,11 @@
 			</a>
 			 
 			<!-- Be sure to leave the brand out there if you want it shown -->
-			<a class="brand<!-- IF SCRIPT_NAME eq 'index' --> active<!-- ENDIF -->" href="{U_INDEX}"><i class="icon-custom-internet-home icon-large"></i> {SITENAME}</a>
+			<!-- IF SCRIPT_NAME eq index -->
+				<span class="brand active"><i class="icon-custom-internet-home icon-large"></i> {SITENAME}</a></span>
+			<!-- ELSE -->
+				<a class="brand" href="{U_INDEX}" title="{L_INDEX}"><i class="icon-custom-internet-home icon-large"></i> {SITENAME}</a>
+			<!-- ENDIF -->
 	 
 			<!-- Everything you want hidden at 940px or less, place within here -->
 			<div class="nav-collapse collapse">
